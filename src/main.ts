@@ -7,9 +7,13 @@ import VueGtag from "vue-gtag";
 createApp(App)
   .use(store)
   .use(router)
-  .use(VueGtag, {
-    config: {
-      id: "UA-189764469-1",
+  .use(
+    VueGtag,
+    {
+      config: {
+        id: "UA-189764469-1",
+      },
     },
-  })
+    router
+  )
   .mount("#app");

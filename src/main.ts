@@ -9,7 +9,7 @@ createApp(App)
   .use(router)
   .use(VueGtag, {
     config: {
-      id: process.env.VUE_APP_GA_TRACKING_ID,
+      id: "UA-189764469-1",
     },
   })
   .mount("#app");

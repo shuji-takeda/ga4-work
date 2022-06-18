@@ -13,6 +13,7 @@ createApp(App)
       config: {
         id: "UA-189764469-1",
       },
+      send_page_view: false,
     },
     router
   )

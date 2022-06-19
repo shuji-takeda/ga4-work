@@ -112,6 +112,7 @@
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
+import { VueGtag } from "vue-gtag";
 
 @Options({
   props: {
@@ -120,6 +121,15 @@ import { Options, Vue } from "vue-class-component";
 })
 export default class HelloWorld extends Vue {
   msg!: string;
+}
+
+export function sendCustomeDimention(gtag: VueGtag) {
+  gtag.customMap({
+    dimention1: "path",
+  });
+  gtag.event("page_view", {
+    dimention1: "path",
+  });
 }
 </script>
 

@@ -9,6 +9,7 @@
       >.
     </p>
     <h3>Installed CLI Plugins</h3>
+    <button v-on="sendCustomeDimention">Click</button>
     <ul>
       <li>
         <a

@@ -125,10 +125,13 @@ export default class HelloWorld extends Vue {
 
 export function sendCustomeDimention(gtag: VueGtag) {
   gtag.customMap({
-    dimention1: "path",
+    dimention1: "age",
   });
   gtag.event("page_view", {
     dimention1: "path",
+    dimention2: "Dimention2",
+    dimention3: "Dimention3",
+    dimention4: "Dimention4",
   });
 }
 </script>

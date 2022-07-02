@@ -10,9 +10,9 @@ createApp(App)
   .use(
     VueGtag,
     {
-      includes: [{ id: "G-TRJ2G876BM" }],
+      includes: [{ id: "XXXXXXXXXX" }],
       config: {
-        id: "UA-189764469-1",
+        id: "XXXXSXXXXXXX",
       },
       send_page_view: false,
     },
